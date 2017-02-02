@@ -23,6 +23,13 @@ $(window).resize(function(){
     }
 });
 
+// $(window).resize(function(){
+//     var width = $(window).width();
+//     if (width < 768) {
+//         $('body div').removeAttr('class');
+//     }
+// });
+
 var winwidth = $(window).width();
 
 if (winwidth < 769) {
