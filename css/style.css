@@ -1,0 +1,170 @@
+* {
+}
+
+body {
+	margin: 0px;
+}
+
+nav {
+	background-color: white;
+	padding: 10px 0px 20px 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	opacity: .80;
+	z-index: 1;
+}
+
+nav ul li {
+	display: block;
+	margin: 15px;
+	padding-bottom: 15px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.25em;
+}
+
+nav ul {
+	clear:both;
+	padding: 40px 0px 0px 0px;
+}
+
+#logo {
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 4em;
+	padding: 0px 20px;
+	margin: -10px 0px;
+	float: left;
+}
+
+#desktopnav {
+	display: none;
+}
+
+#mobilenav {
+	float: right;
+	display: block;
+	font-size: 2em;
+	margin: 20px 20px 0px 0px;
+}
+
+#jumbotron {
+	background-image: url("../img/yogabg.jpg");
+	background-size: cover;
+	height: 350px;
+	margin: 0px;
+	padding: 0px;
+	background-position: center;
+	background-blend-mode: multiply;
+	opacity: .55;
+}
+
+#jumbotronbg {
+	background: linear-gradient( 45deg, purple, pink ); 
+	padding: 0px;
+}
+
+#home {
+	padding-top: 30px;
+}
+
+img {
+	width: 75%;
+}
+
+section {
+	font-family: 'Raleway', serif;
+	padding: 0px 30px;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: purple;
+}
+
+.current {
+	background-color: pink;
+}
+
+@media (min-width: 768px) {
+	
+	nav {
+		background-color: white;
+		padding: 10px 0px;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		opacity: .80;
+		margin: 0 auto;
+	}
+
+	nav ul li {
+		display: inline;
+		margin: 0px 25px;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		font-size: 1.25em;
+	}
+
+	nav ul {
+		padding: 25px 0px 0px 0px;
+		float: right;
+		display: inline;
+	}
+
+	nav a:hover {
+		text-decoration: none;
+	}
+
+	#logo {
+		font-family: 'Berkshire Swash', cursive;
+		font-size: 5em;
+		padding: 0px 20px;
+		margin: 0px;
+		float: left;
+	}
+
+	section {
+		font-family: 'Raleway', serif;
+	}
+
+	#jumbotron {
+		background-image: url("../img/yogabg.jpg");
+		background-size: cover;
+		height: 500px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#desktopnav {
+		display: block;
+		margin-top: -90px;
+	}
+
+	#mobilenav {
+		display: none;
+	}
+
+	#home {
+		padding-top: 160px;
+	}
+
+	#wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+}
