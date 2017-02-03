@@ -66,21 +66,54 @@ nav ul {
 	padding: 0px;
 }
 
-#home {
+/*#home {
 	padding-top: 30px;
+}*/
+
+#homehero {
+	background-image: url("../img/yogabg.jpg");
+	background-size: cover;
+	height: 200px;
+	opacity: .55;
 }
 
+#homeherobg {
+	background: linear-gradient( 45deg, blue, green ); 
+	padding: 0px;
+}
+
+#abouthero {
+	background-image: url("../img/yogabg.jpg");
+	background-size: cover;
+	height: 200px;
+	opacity: .55;
+}
+
+#aboutherobg {
+	background: linear-gradient( -45deg, red, orange ); 
+	padding: 0px;
+}
 img {
 	width: 75%;
 }
 
 section {
 	font-family: 'Raleway', serif;
-	padding: 0px 30px;
+	padding: 0px 0px;
+}
+
+section h1 {
+	position: relative;
+	top: 162px;
+	padding-left: 35px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.25em;
+	color: white;
 }
 
 p {
 	font-family: 'Crimson Text', serif;
+	padding: 15px 35px;
 }
 
 a {
@@ -94,6 +127,11 @@ a:hover {
 
 .current {
 	background-color: pink;
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 @media (min-width: 768px) {
@@ -159,12 +197,20 @@ a:hover {
 	}
 
 	#home {
-		padding-top: 160px;
+		padding-top: 0px;
 	}
 
 	#wrapper {
 		max-width: 1200px;
 		margin: 0 auto;
+	}
+
+	.sectionblock {
+		height: 500px;
+	}
+
+	#homehero {
+		height: 100%;
 	}
 
 }
