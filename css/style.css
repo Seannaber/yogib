@@ -70,29 +70,54 @@ nav ul {
 	padding-top: 30px;
 }*/
 
-#homehero {
-	background-image: url("../img/yogabg.jpg");
+.section {
 	background-size: cover;
 	height: 200px;
-	opacity: .55;
+	opacity: .75;
+	/*border-top: 5px dotted white;*/
+	background-blend-mode: multiply;
 }
 
-#homeherobg {
-	background: linear-gradient( 45deg, blue, green ); 
+.sectionbg {
 	padding: 0px;
+	opacity: 1;
 }
 
-#abouthero {
+#home {
 	background-image: url("../img/yogabg.jpg");
-	background-size: cover;
-	height: 200px;
-	opacity: .55;
+	border: none;
+	height: 350px;
+	background-position: center;
 }
 
-#aboutherobg {
-	background: linear-gradient( -45deg, red, orange ); 
-	padding: 0px;
+#homebg {
+	background: linear-gradient(to left, rgba(178,225,255,1) 0%,rgba(102,182,252,1) 100%); 
 }
+
+#about {
+	background-image: url("../img/yogabg.jpg");
+}
+
+#aboutbg {
+	background: linear-gradient(to right, rgba(229,112,231,1) 0%,rgba(200,94,199,1) 48%,rgba(168,73,163,1) 100%); 
+}
+
+#packages {
+	background-image: url("../img/yogabg.jpg");
+}
+
+#packagesbg {
+	background: linear-gradient(to bottom, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+}
+
+#contact {
+	background-image: url("../img/yogabg.jpg");
+}
+
+#contactbg {
+	background: linear-gradient(to bottom, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%); 
+}
+
 img {
 	width: 75%;
 }
@@ -105,15 +130,24 @@ section {
 section h1 {
 	position: relative;
 	top: 162px;
-	padding-left: 35px;
+	padding: 5px 15px 5px 35px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2.25em;
-	color: white;
+	margin: 0px;
+	background: yellow;
+	display: inline-block;
+	transform: rotate(-2deg);
+}
+
+#home h1 {
+	top: 315px;
 }
 
 p {
 	font-family: 'Crimson Text', serif;
-	padding: 15px 35px;
+	padding: 20px 35px;
+	margin: 0px;
+	font-size: 1.25em;
 }
 
 a {
