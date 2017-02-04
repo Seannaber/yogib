@@ -19,16 +19,17 @@ nav {
 
 nav ul li {
 	display: block;
-	margin: 15px;
+	margin: 35px;
 	padding-bottom: 15px;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	font-size: 1.25em;
+	font-size: 1.5em;
 }
 
 nav ul {
 	clear:both;
 	padding: 40px 0px 0px 0px;
+	height: 1200px;
 }
 
 #logo {
@@ -72,7 +73,7 @@ nav ul {
 
 .section {
 	background-size: cover;
-	height: 200px;
+	height: 300px;
 	opacity: .75;
 	/*border-top: 5px dotted white;*/
 	background-blend-mode: multiply;
@@ -84,7 +85,7 @@ nav ul {
 }
 
 #home {
-	background-image: url("../img/yogabg.jpg");
+	background-image: url("../img/homebg.jpg");
 	border: none;
 	height: 350px;
 	background-position: center;
@@ -95,7 +96,7 @@ nav ul {
 }
 
 #about {
-	background-image: url("../img/yogabg.jpg");
+	background-image: url("../img/aboutbg.jpg");
 }
 
 #aboutbg {
@@ -111,7 +112,7 @@ nav ul {
 }
 
 #contact {
-	background-image: url("../img/yogabg.jpg");
+	background-image: url("../img/contactbg.png");
 }
 
 #contactbg {
@@ -129,7 +130,8 @@ section {
 
 section h1 {
 	position: relative;
-	top: 162px;
+	top: 268px;
+	right: 15px;
 	padding: 5px 15px 5px 35px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2.25em;
