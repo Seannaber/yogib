@@ -1,8 +1,8 @@
 $('nav').onePageNav({
     currentClass: 'current',
     changeHash: false,
-    scrollSpeed: 750,
-    scrollThreshold: 0.5,
+    scrollSpeed: 900,
+    scrollThreshold: .25,
     filter: '',
     easing: 'swing',
     begin: function() {
@@ -23,13 +23,6 @@ $(window).resize(function(){
     }
 });
 
-// $(window).resize(function(){
-//     var width = $(window).width();
-//     if (width < 768) {
-//         $('body div').removeAttr('class');
-//     }
-// });
-
 var winwidth = $(window).width();
 
 if (winwidth < 769) {
@@ -38,8 +31,11 @@ if (winwidth < 769) {
 
 $('#mobilenav').click(toggleMenu);
 
-
+$(document).scroll(function() {
+    $('nav').addClass('scrolled');
+});
 
 function toggleMenu(){
     $('#desktopnav').slideToggle();
+    $('nav').toggleClass('clicked');
 };

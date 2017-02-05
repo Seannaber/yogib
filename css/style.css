@@ -5,15 +5,20 @@ body {
 	margin: 0px;
 }
 
+html, body {
+  	overflow-x:hidden 
+} 
+
 nav {
-	background-color: white;
+	/*background-color: white;*/
+	color: white;
 	padding: 10px 0px 20px 0px;
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	text-align: center;
-	opacity: .80;
+	opacity: 1;
 	z-index: 1;
 }
 
@@ -35,10 +40,27 @@ nav ul {
 
 #logo {
 	font-family: 'Berkshire Swash', cursive;
-	font-size: 3em;
+	font-size: 4.5em;
 	padding: 0px 20px;
 	margin: -10px 0px;
 	float: left;
+	transform: rotate(-2deg);
+/*	text-shadow: 3px 3px 0px yellow,
+	-3px 3px 0px pink,
+	3px -3px 0px orange,
+	-3px -3px 0px blue;*/
+}
+
+.clicked {
+	background-color: white;
+	opacity: .75;
+	color: black;
+}
+
+.scrolled {
+	background-color: white;
+	opacity: .75;
+	color: black;
 }
 
 #desktopnav {
@@ -49,28 +71,12 @@ nav ul {
 	float: right;
 	display: block;
 	font-size: 2em;
-	margin: 15px 30px 0px 0px;
+	margin: 28px 30px 0px 0px;
 }
 
 .navlink.fa {
 	font-size: 1.5em;
 	margin-right: 10px;
-}
-
-#jumbotron {
-	background-image: url("../img/yogabg.jpg");
-	background-size: cover;
-	height: 350px;
-	margin: 0px;
-	padding: 0px;
-	background-position: center;
-	background-blend-mode: multiply;
-	opacity: .55;
-}
-
-#jumbotronbg {
-	background: linear-gradient( 45deg, purple, pink ); 
-	padding: 0px;
 }
 
 /*#home {
@@ -103,10 +109,13 @@ nav ul {
 
 #about {
 	background-image: url("../img/aboutbg.jpg");
+	border: none;
+/*	height: 350px;*/
+	background-position: center;
 }
 
 #aboutbg {
-	background: linear-gradient(to right, rgba(229,112,231,1) 0%,rgba(200,94,199,1) 48%,rgba(168,73,163,1) 100%); 
+	background: linear-gradient(to right, rgba(229,112,231,.8) 0%,rgba(200,94,199,1) 48%); 
 }
 
 #packages {
@@ -114,7 +123,7 @@ nav ul {
 }
 
 #packagesbg {
-	background: linear-gradient(to bottom, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
+	background: linear-gradient(to left, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
 }
 
 #contact {
@@ -122,7 +131,11 @@ nav ul {
 }
 
 #contactbg {
-	background: linear-gradient(to bottom, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%); 
+	background: linear-gradient(to right, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%); 
+}
+
+.contact.fa {
+	font-size: 3em;
 }
 
 img {
@@ -132,6 +145,7 @@ img {
 section {
 	font-family: 'Raleway', serif;
 	padding: 0px 0px;
+	margin-right: -15px;
 }
 
 section h1 {
@@ -153,7 +167,7 @@ section h1 {
 
 p {
 	font-family: 'Crimson Text', serif;
-	padding: 20px 35px;
+	padding: 30px 60px 30px 35px;
 	margin: 0px;
 	font-size: 1.25em;
 }
@@ -176,7 +190,52 @@ a:hover {
 	padding-right: 0px;
 }
 
-@media (min-width: 768px) {
+.col-md-6 {
+	padding-right: 0px;
+}
+
+input[type=text]{
+	width: 100%;
+	padding: 12px 20px;
+	border: none;
+	border-bottom: 2px solid black;
+	background: none;
+	outline: none;
+	color: black;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+
+#emailsignup {
+	margin: 0px 10px;
+	padding: 20px 10px;
+	border: 0px;
+}
+
+.btn {
+	background-color: #333;
+	color: white;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	font-size: .75em;
+	font-family: 'Montserrat', sans-serif; 
+}
+
+@media (min-width: 769px) {
 	
 	nav {
 		background-color: white;
