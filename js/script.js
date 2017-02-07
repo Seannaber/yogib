@@ -2,7 +2,7 @@ $('nav').onePageNav({
     currentClass: 'current',
     changeHash: false,
     scrollSpeed: 900,
-    scrollThreshold: .25,
+    scrollThreshold: .1,
     filter: '',
     easing: 'swing',
     begin: function() {
@@ -34,6 +34,10 @@ $('#mobilenav').click(toggleMenu);
 $(document).scroll(function() {
     $('nav').addClass('scrolled');
 });
+
+$(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
 
 function toggleMenu(){
     $('#desktopnav').slideToggle();

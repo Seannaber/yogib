@@ -126,6 +126,14 @@ nav ul {
 	background: linear-gradient(to left, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
 }
 
+#images {
+	/*background-image: url("../img/yogabg.jpg");*/
+}
+
+#imagesbg {
+	background: linear-gradient(to right, rgba(229,112,231,.8) 0%,rgba(200,94,199,1) 48%);  
+}
+
 #contact {
 	background-image: url("../img/contactbg.png");
 }
@@ -165,6 +173,16 @@ section h1 {
 	top: 315px;
 }
 
+.thumbnail {
+	background: none;
+	border: none;
+	width: 100%;
+}
+
+#thumb1, #thumb2, #thumb3, #thumb4 {
+	padding-right: 15px;
+}
+
 p {
 	font-family: 'Crimson Text', serif;
 	padding: 30px 60px 30px 35px;
@@ -182,7 +200,9 @@ a:hover {
 }
 
 .current {
-	background-color: pink;
+	background-color: yellow;
+	corner-radius: 15px;
+	padding-top: 15px;
 }
 
 .container {
@@ -204,17 +224,28 @@ input[type=text]{
 	color: black;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: black;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: black;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: black;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: black;
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+
+  color: black;
+
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+
+  color: black;
+
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+
+  color: black;
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+
+  color: black;
+
 }
 
 #emailsignup {
