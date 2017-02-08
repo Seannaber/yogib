@@ -1,3 +1,4 @@
+$(document).ready(function() {
 $('nav').onePageNav({
     currentClass: 'current',
     changeHash: false,
@@ -45,3 +46,4 @@ function toggleMenu(){
     $('#desktopnav').slideToggle();
     $('nav').toggleClass('clicked');
 };
+});
