@@ -1,5 +1,5 @@
 $(document).ready(function() {
-alert('hi');
+// alert('hi');
 $('nav').onePageNav({
     currentClass: 'current',
     changeHash: false,
