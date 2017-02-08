@@ -173,6 +173,10 @@ section h1 {
 	top: 315px;
 }
 
+#imagesbg h1 {
+	top: -15px;
+}
+
 .thumbnail {
 	background: none;
 	border: none;

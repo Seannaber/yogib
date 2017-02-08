@@ -29,7 +29,9 @@ if (winwidth < 769) {
     $('#desktopnav li').click(toggleMenu);
 };
 
-$('#mobilenav').click(toggleMenu);
+$(document).ready(function() {
+    $('#mobilenav').click(toggleMenu);
+});
 
 $(document).scroll(function() {
     $('nav').addClass('scrolled');
