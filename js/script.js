@@ -43,8 +43,14 @@ $(document).ready(function() {
         $(".fancybox").fancybox();
     });
 
+
 function toggleMenu(){
     $('#desktopnav').slideToggle();
+    if ($('#mobilenav').hasClass('fa fa-bars')) {
+        $('#mobilenav').removeAttr('class').addClass('fa fa-times');
+    } else {
+        $('#mobilenav').removeAttr('class').addClass('fa fa-bars');
+    };
     $('nav').toggleClass('clicked');
 };
 });

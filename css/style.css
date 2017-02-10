@@ -31,6 +31,18 @@ nav ul li {
 	font-size: 1.5em;
 	vertical-align: middle;
 	letter-spacing: .05em;
+
+}
+
+li:hover {
+	animation: liJiggle .5s linear infinite;
+}
+
+@keyframes liJiggle {
+	25% {transform: rotate(-2deg);}
+	50% {transform: rotate(0deg);}
+	75% {transform: rotate(2deg);}
+	100% {transform: rotate(0deg);}
 }
 
 nav ul {
@@ -102,11 +114,18 @@ nav ul {
 	border: none;
 	height: 350px;
 	background-position: center;
+	/*animation: movingday 10s linear infinite;*/
 }
 
 #homebg {
 	background: linear-gradient(to left, rgba(178,225,255,1) 0%,rgba(102,182,252,1) 100%); 
 }
+
+/*@keyframes movingday {
+	from {background-position: 50% 50%;}
+	from {background-position: 100% 50%;}
+	to {background-position: 50% 50%;}
+}*/
 
 #about {
 	background-image: url("../img/aboutbg.jpg");
@@ -168,6 +187,13 @@ section h1 {
 	background: yellow;
 	display: inline-block;
 	transform: rotate(-2deg);
+	/*animation: hjiggle .1s linear infinite;*/
+}
+
+@keyframes hjiggle {
+	33% {transform: rotate(-2deg);}
+	66% {transform: rotate(-4deg);}
+	100% {transform: rotate(-2deg);}
 }
 
 #home h1 {
@@ -301,6 +327,17 @@ footer {
 		/*text-transform: uppercase;*/
 		font-size: 1em;
 	}
+
+	li:hover {
+		animation: liJiggle .5s linear infinite;
+	}
+
+	@keyframes liJiggle {
+	25% {transform: rotate(-2deg);}
+	50% {transform: rotate(0deg);}
+	75% {transform: rotate(2deg);}
+	100% {transform: rotate(0deg);}
+}
 
 	nav ul {
 		padding: 100px 0px 0px 0px;
