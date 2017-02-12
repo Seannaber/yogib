@@ -31,17 +31,13 @@ if (winwidth < 769) {
     $('#desktopnav li').click(toggleMenu);
 };
 
-$(document).ready(function() {
-    $('#mobilenav').click(toggleMenu);
-});
+$('#mobilenav').click(toggleMenu);
 
 $(document).scroll(function() {
     $('nav').addClass('scrolled');
 });
 
-$(document).ready(function() {
-        $(".fancybox").fancybox();
-    });
+$(".fancybox").fancybox();
 
 
 function toggleMenu(){
