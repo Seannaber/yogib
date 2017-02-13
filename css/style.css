@@ -453,7 +453,7 @@ footer {
 	}
 
 	#aboutbg {
-		padding: 60px 60px 60px 0px;
+		padding: 60px 0px 60px 0px;
 	}
 
 	#packagesbg {
@@ -467,14 +467,35 @@ footer {
 	}
 
 	#imagesbg {
-		padding-top: 60px;
-		width: 100%;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		/*width: 100%;*/
+		padding-bottom: 35px;
+		background-color: white;
+		border-radius: 5px;
 	}
 
 	#homebg h2 {
 		padding: 20px 60px;
 		line-height: 1.5em;
 		font-family: 'Raleway', serif;
+		font-size: 1.75em;
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	#contact {
+		height: 250px;
+	}
+
+	footer {
+		height: 200px;
+	}
+
+	#scrolldown {
+		margin: 0 auto;
+		font-size: 5em;
+		display: block;
 	}
 
 }
