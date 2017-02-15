@@ -7,7 +7,6 @@
 
 body {
 	margin: 0px auto;
-	/*max-width: 1000px;*/
 }
 
 html, body {
@@ -15,7 +14,6 @@ html, body {
 } 
 
 nav {
-	/*background-color: white;*/
 	color: white;
 	padding: 10px 0px 20px 0px;
 	position: fixed;
@@ -32,7 +30,6 @@ nav ul li {
 	margin: 35px;
 	padding-bottom: 15px;
 	font-family: 'Montserrat', sans-serif;
-	/*text-transform: uppercase;*/
 	font-size: 1.5em;
 	vertical-align: middle;
 	letter-spacing: .05em;
@@ -42,17 +39,6 @@ nav ul li {
 a:visited, a:hover, a:active, a:focus {
 	color: black;
 	text-decoration: none;
-}
-
-/*li:hover {
-	animation: liJiggle .5s linear infinite;
-}*/
-
-@keyframes liJiggle {
-	25% {transform: rotate(-2deg);}
-	50% {transform: rotate(0deg);}
-	75% {transform: rotate(2deg);}
-	100% {transform: rotate(0deg);}
 }
 
 nav ul {
@@ -68,10 +54,6 @@ nav ul {
 	margin: -10px 0px;
 	float: left;
 	transform: rotate(-2deg);
-/*	text-shadow: 3px 3px 0px yellow,
-	-3px 3px 0px pink,
-	3px -3px 0px orange,
-	-3px -3px 0px blue;*/
 }
 
 .clicked {
@@ -102,15 +84,10 @@ nav ul {
 	margin-right: 10px;
 }
 
-/*#home {
-	padding-top: 30px;
-}*/
-
 .section {
 	background-size: cover;
 	height: 300px;
 	opacity: .75;
-	/*border-top: 5px dotted white;*/
 	background-blend-mode: multiply;
 }
 
@@ -124,24 +101,15 @@ nav ul {
 	border: none;
 	height: 350px;
 	background-position: center;
-	/*animation: movingday 10s linear infinite;*/
 }
 
 #homebg {
 	background: linear-gradient(to left, rgba(178,225,255,1) 0%,rgba(102,182,252,1) 100%); 
 }
 
-/*@keyframes movingday {
-	from {background-position: 50% 50%;}
-	from {background-position: 100% 50%;}
-	to {background-position: 50% 50%;}
-}*/
-
 #about {
 	background-image: url("../img/aboutbg.jpg");
 	border: none;
-/*	height: 350px;*/
-	background-position: center;
 }
 
 #aboutbg {
@@ -154,14 +122,13 @@ nav ul {
 
 #packagesbg {
 	background: linear-gradient(to left, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); 
-}
-
-#images {
-	/*background-image: url("../img/yogabg.jpg");*/
+	padding-right: 20px;
 }
 
 #imagesbg {
-	background: linear-gradient(to right, rgba(229,112,231,.8) 0%,rgba(200,94,199,1) 48%);  
+	background: linear-gradient(to right, rgba(229,112,231,.8) 0%,rgba(200,94,199,1) 48%);
+	padding-left: 30px; 
+	padding-right: 40px; 
 }
 
 #contact {
@@ -177,7 +144,7 @@ nav ul {
 }
 
 img {
-	width: 75%;
+	width: 90%;
 }
 
 section {
@@ -197,18 +164,20 @@ section h1 {
 	background: yellow;
 	display: inline-block;
 	transform: rotate(-2deg);
-	/*animation: hjiggle .1s linear infinite;*/
-}
-
-@keyframes hjiggle {
-	33% {transform: rotate(-2deg);}
-	66% {transform: rotate(-4deg);}
-	100% {transform: rotate(-2deg);}
 }
 
 #home h1 {
 	top: 315px;
 }
+
+#homebg h2 {
+		padding: 20px 10px 30px 10px;
+		line-height: 1.5em;
+		font-family: 'Raleway', serif;
+		font-size: 1.5em;
+		width: 75%;
+		margin: 0 auto;
+	}
 
 #imagesbg h1 {
 	top: -15px;
@@ -309,6 +278,16 @@ input[type=text]{
 	color: white;
 }
 
+.packagebutton {
+	width: 200px;
+	height: 50px;
+}
+
+.package {
+	border-bottom: 1px dotted black;
+	padding-bottom: 20px;
+}
+
 ul .btn {
 	margin-top: 15px;
 }
@@ -333,7 +312,6 @@ footer {
 	body {
 		background: linear-gradient(to left, rgba(178,225,255,1) 0%,rgba(102,182,252,1) 100%); 
 		margin-top: 200px;
-		/*border-radius: 10px;*/
 	}
 
 	nav {
@@ -355,24 +333,11 @@ footer {
 		display: inline;
 		margin: 0px 25px;
 		font-family: 'Montserrat', sans-serif;
-		/*text-transform: uppercase;*/
 		font-size: 1em;
 	}
 
-	/*li:hover {
-		animation: liJiggle .5s linear infinite;
-	}*/
-
-	@keyframes liJiggle {
-	25% {transform: rotate(-2deg);}
-	50% {transform: rotate(0deg);}
-	75% {transform: rotate(2deg);}
-	100% {transform: rotate(0deg);}
-}
-
 	nav ul {
 		padding: 100px 0px 0px 0px;
-		/*float: right;*/
 		display: inline;
 	}
 
@@ -384,12 +349,6 @@ footer {
 	a {
 		text-decoration: none;
 	}
-
-	/*nav a:hover {
-		text-decoration: none;
-		color: black;
-		animation: liJiggle .5s linear infinite;
-	}*/
 
 	#logo {
 		font-family: 'Berkshire Swash', cursive;
@@ -412,8 +371,6 @@ footer {
 	section h1 {
 	width: 250px;
 	position: relative;
-	/* top: -10px; */
-	/* right: 15px; */
 	padding: 5px 5px 5px 5px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2.25em;
@@ -421,7 +378,6 @@ footer {
 	background: yellow;
 	display: block; 
 	transform: rotate(-2deg);
-	/*animation: hjiggle .1s linear infinite;*/
 }
 
 	#desktopnav {
@@ -458,6 +414,7 @@ footer {
 
 	#packagesbg {
 		padding-bottom: 35px;
+		padding-right: 0px;
 		background-color: white;
 		border-radius: 5px;
 	}
@@ -469,8 +426,8 @@ footer {
 	#imagesbg {
 		margin-top: 60px;
 		margin-bottom: 60px;
-		/*width: 100%;*/
 		padding-bottom: 35px;
+		padding-right: 30px;
 		background-color: white;
 		border-radius: 5px;
 	}
@@ -496,6 +453,10 @@ footer {
 		margin: 0 auto;
 		font-size: 5em;
 		display: block;
+	}
+
+	.package {
+		border-bottom: none;
 	}
 
 }
